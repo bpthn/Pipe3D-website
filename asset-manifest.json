@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Pipe3D-website/static/css/main.b75a8c99.css",
-    "main.js": "/Pipe3D-website/static/js/main.26c663b5.js",
+    "main.js": "/Pipe3D-website/static/js/main.48507258.js",
     "static/js/453.117b0875.chunk.js": "/Pipe3D-website/static/js/453.117b0875.chunk.js",
     "index.html": "/Pipe3D-website/index.html",
     "main.b75a8c99.css.map": "/Pipe3D-website/static/css/main.b75a8c99.css.map",
-    "main.26c663b5.js.map": "/Pipe3D-website/static/js/main.26c663b5.js.map",
+    "main.48507258.js.map": "/Pipe3D-website/static/js/main.48507258.js.map",
     "453.117b0875.chunk.js.map": "/Pipe3D-website/static/js/453.117b0875.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b75a8c99.css",
-    "static/js/main.26c663b5.js"
+    "static/js/main.48507258.js"
   ]
 }
