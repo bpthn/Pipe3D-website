@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# Pipe3D - 3D Product Viewer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, minimal React web application for viewing 3D product models with Thai language support.
+
+## Features
+
+- 🎨 Clean, minimal blue-themed UI design
+- 🌐 Thai language support with Sarabun font
+- 🎯 3D product viewer with Sketchfab integration
+- 📱 Responsive design with swipe support
+- 🖼️ Image and 3D view toggle
+- 🔗 Social media links (TikTok Shop & Shopee)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+cd [YOUR_REPO_NAME]
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000)
+
+## Deployment to GitHub Pages
+
+### Step 1: Create GitHub Repository
+
+1. Go to [GitHub](https://github.com) and create a new repository
+2. Name it (e.g., `pipe3d` or `pipe3d-website`)
+3. Don't initialize with README (we already have one)
+
+### Step 2: Update package.json
+
+Update the `homepage` field in `package.json` with your GitHub Pages URL:
+
+```json
+"homepage": "https://[YOUR_USERNAME].github.io/[YOUR_REPO_NAME]"
+```
+
+For example:
+```json
+"homepage": "https://johndoe.github.io/pipe3d"
+```
+
+### Step 3: Initialize Git and Push to GitHub
+
+```bash
+# Initialize git (if not already done)
+git init
+
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit - Pipe3D website"
+
+# Add remote repository (replace with your repo URL)
+git remote add origin https://github.com/[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
+
+### Step 4: Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This will:
+1. Build your React app
+2. Deploy it to the `gh-pages` branch
+3. Make it available at `https://[YOUR_USERNAME].github.io/[YOUR_REPO_NAME]`
+
+### Step 5: Enable GitHub Pages
+
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Under **Source**, select **gh-pages** branch
+4. Click **Save**
+
+Your website will be live at: `https://[YOUR_USERNAME].github.io/[YOUR_REPO_NAME]`
+
+## Updating the Website
+
+After making changes:
+
+```bash
+# Commit your changes
+git add .
+git commit -m "Your commit message"
+git push
+
+# Deploy updates
+npm run deploy
+```
+
+## Project Structure
+
+```
+my-app/
+├── public/
+│   ├── images/          # Product images
+│   ├── logo/            # Logo files
+│   ├── file/            # CSV data file
+│   └── index.html
+├── src/
+│   ├── App.js           # Main app component
+│   └── App.css          # Styles
+└── package.json
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Start development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run deploy` - Deploy to GitHub Pages
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19
+- Material-UI (MUI) 7
+- Sketchfab 3D Viewer
+- Google Fonts (Sarabun for Thai)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is private.
