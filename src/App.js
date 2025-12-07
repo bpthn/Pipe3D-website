@@ -40,13 +40,16 @@ const theme = createTheme({
   },
 });
 
+// Get public URL for GitHub Pages compatibility
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+
 // Product data - 16 products from Pipe3D.csv
 // Data extracted from public/file/Pipe3D.csv
 const products = [
   {
     id: 1,
     name: 'หน้าจานกลม',
-    image: '/images/PC-A-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-A-EIT.png`,
     description: 'ข้อต่อหน้าจานกลม สำหรับเป็นฐานยึดติดพื้น ผนัง หรือเพดาน ช่วยรองรับโครงสร้าง DIY ให้มั่นคงและแข็งแรง',
     sketchfabEmbed: 'https://sketchfab.com/models/312b4e467b264ef19cc9214fbe576c23/embed',
     sketchfabTitle: 'PC-A-EIT',
@@ -56,7 +59,7 @@ const products = [
   {
     id: 2,
     name: 'ข้องอ 90 องศา',
-    image: '/images/PC-B-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-B-EIT.png`,
     description: 'ข้อต่อสำหรับเปลี่ยนทิศทางท่อแบบมุมฉาก 90° ใช้สร้างมุมโครงสร้าง',
     sketchfabEmbed: 'https://sketchfab.com/models/c2ead7a4cc824c3283a89428c92b299c/embed',
     sketchfabTitle: 'PC-B-EIT',
@@ -66,7 +69,7 @@ const products = [
   {
     id: 3,
     name: 'สามทางฉาก',
-    image: '/images/PC-C-L-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-C-L-EIT.png`,
     description: 'ข้อต่อสามทางแบบมุมฉาก เชื่อมต่อท่อในแนวตั้ง–แนวนอน เหมาะกับการทำชั้นวาง โต๊ะ หรือโครงสร้างรูปทรงตัว L',
     sketchfabEmbed: 'https://sketchfab.com/models/b65d7f7b71c94710a84ab5820b657307/embed',
     sketchfabTitle: 'PC-C-L-EIT',
@@ -76,7 +79,7 @@ const products = [
   {
     id: 4,
     name: 'สามทางตัวที',
-    image: '/images/PC-C-T-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-C-T-EIT.png`,
     description: 'ข้อต่อรูปตัว T สำหรับแตกแขนท่อสามทิศทาง เหมาะสำหรับเพิ่มจุดยึด หรือสร้างโครงแบบแนวขวางและแนวตั้ง',
     sketchfabEmbed: 'https://sketchfab.com/models/8879107e8d9a4d5bb1d0aa4ec634fdc7/embed',
     sketchfabTitle: 'PC-C-T-EIT',
@@ -86,7 +89,7 @@ const products = [
   {
     id: 5,
     name: 'สามทางเอียง 45 องศา',
-    image: '/images/PC-C-V-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-C-V-EIT.png`,
     description: 'ข้อต่อสามทางมุมเอียง 45° ช่วยให้โครงสร้างสร้างมุมเฉียงได้อย่างแม่นยำ เหมาะกับโครงงานที่ต้องการเส้นสายแบบไดนามิก',
     sketchfabEmbed: 'https://sketchfab.com/models/41450f7a381c413396c5b59cbd3b8681/embed',
     sketchfabTitle: 'PC-C-V-EIT',
@@ -96,7 +99,7 @@ const products = [
   {
     id: 6,
     name: 'สี่ทางจั่ว',
-    image: '/images/PC-D-J-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-D-J-EIT.png`,
     description: 'ข้อต่อสี่ทางแบบทรงจั่ว ใช้สร้างจุดยอดโครงสร้าง เช่น หลังคาทรงจั่ว เฟรมทรงสามเหลี่ยม หรือโครงเหล็กดีไซน์เฉียง',
     sketchfabEmbed: 'https://sketchfab.com/models/5c42692664dc43568eabbd523b0a4554/embed',
     sketchfabTitle: 'PC-D-J-EIT',
@@ -106,7 +109,7 @@ const products = [
   {
     id: 7,
     name: 'สี่ทางหมุน',
-    image: '/images/PC-D-R-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-D-R-EIT.png`,
     description: 'ข้อต่อสี่ทางแบบหมุน ปรับมุมได้อิสระ เหมาะสำหรับงานโครงสร้างที่ต้องการความยืดหยุ่นและปรับองศาได้ตามต้องการ',
     sketchfabEmbed: 'https://sketchfab.com/models/8a5d627f085248babfa5b6fca22782f5/embed',
     sketchfabTitle: 'PC-D-R-EIT',
@@ -116,7 +119,7 @@ const products = [
   {
     id: 8,
     name: 'ห้าทางฉาก',
-    image: '/images/PC-E-L-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-E-L-EIT.png`,
     description: 'ข้อต่อห้าทิศทางแบบมุมฉาก เหมาะสำหรับการต่อโครงสร้างหลายแขน เช่น โครงชั้นวางหรือเฟรมทรงกล่องที่ต้องการจุดรวมหลายด้าน',
     sketchfabEmbed: 'https://sketchfab.com/models/c115fc61f1584bbb8dbd413a841675c6/embed',
     sketchfabTitle: 'PC-E-L-EIT',
@@ -126,7 +129,7 @@ const products = [
   {
     id: 9,
     name: 'ห้าทางประคองจั่ว',
-    image: '/images/PC-E-SJ-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-E-SJ-EIT.png`,
     description: 'ข้อต่อห้าทางสำหรับงานโครงสร้างทรงจั่ว เสริมแรงให้เฟรมหลังคาหรือเฟรมทรงสามเหลี่ยมให้มั่นคงยิ่งขึ้น',
     sketchfabEmbed: 'https://sketchfab.com/models/911dd92852d24750992281232e453199/embed',
     sketchfabTitle: 'PC-E-SJ-EIT',
@@ -136,7 +139,7 @@ const products = [
   {
     id: 10,
     name: 'ห้าทางประคองข้าง',
-    image: '/images/PC-E-SS-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-E-SS-EIT.png`,
     description: 'ข้อต่อห้าทางที่ออกแบบมาสำหรับยึดโครงด้านข้าง เพิ่มความแข็งแรงให้โครงสร้างแนวประกบหรือเฟรมที่ต้องรับแรงด้านข้าง',
     sketchfabEmbed: 'https://sketchfab.com/models/3b15a8813b444361b46b4a17bad71639/embed',
     sketchfabTitle: 'PC-E-SS-EIT',
@@ -146,7 +149,7 @@ const products = [
   {
     id: 11,
     name: 'ข้อต่อค้ำข้างเดียว',
-    image: '/images/PC-G-D1-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-G-D1-EIT.png`,
     description: 'ข้อต่อสำหรับค้ำยันจากด้านเดียว ช่วยเสริมความแข็งแรงจุดยึดหลัก เหมาะกับงานที่ต้องการบังคับทิศทางแรงเฉียง',
     sketchfabEmbed: 'https://sketchfab.com/models/e2c4528b135c48048cb97bd4d345ff44/embed',
     sketchfabTitle: 'PC-G-D1-EIT',
@@ -156,7 +159,7 @@ const products = [
   {
     id: 12,
     name: 'กากบาทสี่ทาง',
-    image: '/images/PC-G-XD4-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-G-XD4-EIT.png`,
     description: 'ข้อต่อรูปกากบาทต่อออกสี่ทิศทาง เหมาะสำหรับงานโครงสร้างแบบตารางหรือเฟรมที่ต้องการศูนย์กลางเชื่อมหลายจุด',
     sketchfabEmbed: 'https://sketchfab.com/models/26c9692c31544724b0d2c016f5b1cdf0/embed',
     sketchfabTitle: 'PC-G-XD4-EIT',
@@ -166,7 +169,7 @@ const products = [
   {
     id: 13,
     name: 'ต่อตรงยาว',
-    image: '/images/PC-H-D-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-H-D-EIT.png`,
     description: 'ข้อต่อตรงแบบยาว ใช้เชื่อมท่อสองท่อนในแนวเดียวกัน เหมาะสำหรับขยายความยาวโครงสร้าง',
     sketchfabEmbed: 'https://sketchfab.com/models/572021fddb9240bda2f9fa1a2a6c150a/embed',
     sketchfabTitle: 'PC-H-D-EIT',
@@ -176,7 +179,7 @@ const products = [
   {
     id: 14,
     name: 'ข้อต่อตรงสามทาง',
-    image: '/images/PC-H-D3-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-H-D3-EIT.png`,
     description: 'ข้อต่อตรงที่เพิ่มช่องต่อด้านข้าง เหมาะกับการเพิ่มแขนเสริม หรือแตกแนวโครงสร้างจากท่อหลัก',
     sketchfabEmbed: 'https://sketchfab.com/models/3edfa360bef74f128949a240b6bfd7d7/embed',
     sketchfabTitle: 'PC-H-D3-EIT',
@@ -186,7 +189,7 @@ const products = [
   {
     id: 15,
     name: 'ข้อต่อตรงสี่ทาง',
-    image: '/images/PC-H-D4-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-H-D4-EIT.png`,
     description: 'ข้อต่อตรงแบบสี่ทิศทาง ช่วยให้สามารถต่อท่อตรงพร้อมแตกแขนออกหลายด้านในจุดเดียว',
     sketchfabEmbed: 'https://sketchfab.com/models/b7ea334b1d88415985bde74b51548b13/embed',
     sketchfabTitle: 'PC-H-D4-EIT',
@@ -196,7 +199,7 @@ const products = [
   {
     id: 16,
     name: 'ต่อตรงปิดหัวรู',
-    image: '/images/PC-H-DEND-EIT.png',
+    image: `${PUBLIC_URL}/images/PC-H-DEND-EIT.png`,
     description: 'ข้อต่อสำหรับอุดปิดปลายท่อ ใช้ปิดหัวรูเพื่อความเรียบร้อย ป้องกันฝุ่น และทำให้โครงสร้างดูสมบูรณ์',
     sketchfabEmbed: 'https://sketchfab.com/models/eb67d197d4c442f3bc8705d0203340a0/embed',
     sketchfabTitle: 'PC-H-DEND-EIT',
@@ -303,7 +306,7 @@ export default function App() {
             >
               <Box
                 component="img"
-                src="/logo/tiktok-shop-marketplace.png"
+                src={`${PUBLIC_URL}/logo/tiktok-shop-marketplace.png`}
                 alt="TikTok Shop"
                 sx={{
                   height: 32,
@@ -329,7 +332,7 @@ export default function App() {
             >
               <Box
                 component="img"
-                src="/logo/shopee.png"
+                src={`${PUBLIC_URL}/logo/shopee.png`}
                 alt="Shopee"
                 sx={{
                   height: 32,
