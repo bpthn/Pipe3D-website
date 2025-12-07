@@ -332,7 +332,7 @@ export default function App() {
             >
               <Box
                 component="img"
-                src={`${PUBLIC_URL}/logo/shopee.png`}
+                src={`${PUBLIC_URL}/logo/Shopee.png`}
                 alt="Shopee"
                 sx={{
                   height: 32,
